@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-monorepo/auth": ["libs/auth/src/index.ts"],
+      "@angular-monorepo/products": ["libs/products/src/index.ts"],
+      "@angular-monorepo/ui": ["libs/ui/src/index.ts"],
+      "@angular-monorepo/user": ["libs/users/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
