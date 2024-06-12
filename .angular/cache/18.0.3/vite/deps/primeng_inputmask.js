@@ -1,26 +1,21 @@
 import {
-  InputText,
-  InputTextModule
-} from "./chunk-LVBD33DH.js";
-import {
   TimesIcon
 } from "./chunk-34HRAY3O.js";
-import "./chunk-CEAPRNF7.js";
 import {
-  AutoFocus,
-  AutoFocusModule
-} from "./chunk-NHL7PYGQ.js";
-import {
-  DomHandler
-} from "./chunk-TKJMWDM5.js";
+  InputText,
+  InputTextModule
+} from "./chunk-Y2B2ZFML.js";
 import {
   NG_VALUE_ACCESSOR
 } from "./chunk-C25ISDRN.js";
 import {
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule
-} from "./chunk-NHKCV7T3.js";
+  AutoFocus,
+  AutoFocusModule
+} from "./chunk-NHL7PYGQ.js";
+import "./chunk-CEAPRNF7.js";
+import {
+  DomHandler
+} from "./chunk-TKJMWDM5.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -30,6 +25,11 @@ import {
   NgTemplateOutlet,
   isPlatformBrowser
 } from "./chunk-GKCCOTKN.js";
+import {
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule
+} from "./chunk-NHKCV7T3.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

@@ -67,6 +67,9 @@ export class ProductsFormComponent implements OnInit {
     this._checkEditMode();
   }
 
+  onCancle() {
+    this.location.back();
+  }
   onSubmit() {
     this.isSubmitted = true;
     if (this.form.invalid) return;
@@ -81,9 +84,6 @@ export class ProductsFormComponent implements OnInit {
     } else {
       this._addProduct(productFormData);
     }
-  }
-  onCancle() {
-    return;
   }
 
   onImageUpload(event) {

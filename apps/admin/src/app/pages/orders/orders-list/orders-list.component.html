@@ -1,8 +1,8 @@
 <p-toast></p-toast>
 <div class="admin-page">
   <p-card header="Orders" subheader="List of all orders">
-    <div class="p-grid">
-      <div class="p-col-12">
+    <div class="grid">
+      <div class="col-12">
         <p-table [value]="orders" styleClass="p-datatable-gridlines">
           <ng-template pTemplate="header">
             <tr>
@@ -35,7 +35,7 @@
               <td>
                 <p-button
                   (click)="deleteOrder(order.id)"
-                  styleClass="p-button-danger p-mr-2"
+                  styleClass="p-button-danger mr-2"
                   icon="pi pi-trash"
                 ></p-button>
                 <p-button

@@ -11,27 +11,18 @@ import {
   trigger
 } from "./chunk-2SE65LCK.js";
 import {
-  Ripple,
-  RippleModule
-} from "./chunk-LBPE5MOL.js";
-import {
   TimesIcon
 } from "./chunk-34HRAY3O.js";
+import {
+  Ripple,
+  RippleModule
+} from "./chunk-5YMAJM23.js";
 import {
   BaseIcon
 } from "./chunk-CEAPRNF7.js";
 import {
   DomHandler
 } from "./chunk-TKJMWDM5.js";
-import {
-  MessageService,
-  ObjectUtils,
-  PrimeNGConfig,
-  PrimeTemplate,
-  SharedModule,
-  UniqueComponentId,
-  zindexutils
-} from "./chunk-NHKCV7T3.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -41,6 +32,15 @@ import {
   NgStyle,
   NgTemplateOutlet
 } from "./chunk-GKCCOTKN.js";
+import {
+  MessageService,
+  ObjectUtils,
+  PrimeNGConfig,
+  PrimeTemplate,
+  SharedModule,
+  UniqueComponentId,
+  zindexutils
+} from "./chunk-NHKCV7T3.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

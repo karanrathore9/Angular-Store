@@ -1,14 +1,9 @@
 import {
-  DomHandler
-} from "./chunk-TKJMWDM5.js";
-import {
   NG_VALUE_ACCESSOR
 } from "./chunk-C25ISDRN.js";
 import {
-  Header,
-  PrimeTemplate,
-  SharedModule
-} from "./chunk-NHKCV7T3.js";
+  DomHandler
+} from "./chunk-TKJMWDM5.js";
 import {
   CommonModule,
   NgClass,
@@ -17,6 +12,11 @@ import {
   NgTemplateOutlet,
   isPlatformServer
 } from "./chunk-GKCCOTKN.js";
+import {
+  Header,
+  PrimeTemplate,
+  SharedModule
+} from "./chunk-NHKCV7T3.js";
 import {
   ChangeDetectionStrategy,
   Component,

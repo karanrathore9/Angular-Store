@@ -1,8 +1,8 @@
 <p-toast></p-toast>
 <div class="admin-page">
   <p-card header="Products" subheader="List of all products">
-    <div class="p-grid">
-      <div class="p-col-12">
+    <div class="grid">
+      <div class="col-12">
         <p-toolbar>
           <div class="p-toolbar-group-left">
             <p-button
@@ -15,8 +15,8 @@
         </p-toolbar>
       </div>
     </div>
-    <div class="p-grid">
-      <div class="p-col-12">
+    <div class="grid">
+      <div class="col-12">
         <p-table
           [paginator]="true"
           [rows]="10"
@@ -48,7 +48,7 @@
           <ng-template pTemplate="body" let-product>
             <tr>
               <td>{{ product.name }}</td>
-              <td><img [src]="product.image" style="width: 100%" alt="" /></td>
+              <td><img [src]="product.image" style="width: 100px" alt="" /></td>
               <td>{{ product.price }}</td>
               <td>{{ product.countInStock }}</td>
               <td>
@@ -58,7 +58,7 @@
               <td>
                 <p-button
                   (click)="deleteProduct(product.id)"
-                  styleClass="p-button-danger p-mr-2"
+                  styleClass="p-button-danger mr-2"
                   icon="pi pi-trash"
                 ></p-button>
                 <p-button

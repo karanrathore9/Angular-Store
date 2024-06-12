@@ -2,11 +2,11 @@ import {
   NgModel
 } from "./chunk-C25ISDRN.js";
 import {
-  PrimeNGConfig
-} from "./chunk-NHKCV7T3.js";
-import {
   CommonModule
 } from "./chunk-GKCCOTKN.js";
+import {
+  PrimeNGConfig
+} from "./chunk-NHKCV7T3.js";
 import {
   ChangeDetectorRef,
   Directive,
@@ -139,4 +139,4 @@ export {
   InputText,
   InputTextModule
 };
-//# sourceMappingURL=chunk-LVBD33DH.js.map
+//# sourceMappingURL=chunk-Y2B2ZFML.js.map

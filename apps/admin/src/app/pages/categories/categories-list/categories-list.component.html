@@ -1,10 +1,10 @@
 <p-toast></p-toast>
 <div class="admin-page">
   <p-card header="Categories" subheader="List of all categories">
-    <div class="p-grid">
-      <div class="p-col-12">
+    <div class="grid">
+      <div class="col-12">
         <p-toolbar>
-          <div class="p-toolbar-group-left">
+          <div class="toolbar-group-left">
             <p-button
               label="New"
               icon="pi pi-plus"
@@ -15,8 +15,8 @@
         </p-toolbar>
       </div>
     </div>
-    <div class="p-grid">
-      <div class="p-col-12">
+    <div class="grid">
+      <div class="col-12">
         <p-table [value]="categories" styleClass="p-datatable-gridlines">
           <ng-template pTemplate="header">
             <tr>
@@ -48,7 +48,7 @@
               <td>
                 <p-button
                   (click)="deleteCategory(category._id)"
-                  styleClass="p-button-danger p-mr-2"
+                  styleClass="p-button-danger mr-2"
                   icon="pi pi-trash"
                 ></p-button>
                 <p-button

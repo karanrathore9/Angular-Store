@@ -5,6 +5,9 @@ import {
   trigger
 } from "./chunk-2SE65LCK.js";
 import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-C25ISDRN.js";
+import {
   AutoFocus,
   AutoFocusModule
 } from "./chunk-NHL7PYGQ.js";
@@ -13,15 +16,6 @@ import {
   DomHandler
 } from "./chunk-TKJMWDM5.js";
 import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-C25ISDRN.js";
-import {
-  OverlayService,
-  PrimeNGConfig,
-  TranslationKeys,
-  zindexutils
-} from "./chunk-NHKCV7T3.js";
-import {
   CommonModule,
   DOCUMENT,
   NgClass,
@@ -29,6 +23,12 @@ import {
   NgStyle,
   isPlatformBrowser
 } from "./chunk-GKCCOTKN.js";
+import {
+  OverlayService,
+  PrimeNGConfig,
+  TranslationKeys,
+  zindexutils
+} from "./chunk-NHKCV7T3.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,

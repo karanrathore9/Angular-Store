@@ -4,7 +4,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { HttpErrorResponse } from '@angular/common/http';
+import { HttpClientModule, HttpErrorResponse } from '@angular/common/http';
+import { LocalstorageService } from '../services/localStorage.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'lib-auth',
@@ -15,7 +17,9 @@ import { HttpErrorResponse } from '@angular/common/http';
     ButtonModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
+  providers: [HttpClientModule, AuthService, LocalstorageService],
   templateUrl: './auth.component.html',
   styleUrl: './auth.component.css',
 })
@@ -27,8 +31,8 @@ export class AuthComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    // private auth: AuthService,
-    // private localstorageService: LocalstorageService,
+    private auth: AuthService,
+    private localstorageService: LocalstorageService,
     private router: Router
   ) {}
 
@@ -44,13 +48,14 @@ export class AuthComponent implements OnInit {
   }
 
   onSubmit() {
-    return
+    console.log('Clicked !!');
+    return;
     // this.isSubmitted = true;
 
     // if (this.loginFormGroup.invalid) return;
 
     // this.auth
-    //   .login(this.loginForm.email.value, this.loginForm.password.value)
+    //   .login(this.loginForm['email'].value, this.loginForm['password'].value)
     //   .subscribe(
     //     (user:any) => {
     //       this.authError = false;
