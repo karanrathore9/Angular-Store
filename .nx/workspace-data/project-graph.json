@@ -13699,7 +13699,7 @@
       {
         "source": "admin",
         "target": "auth",
-        "type": "dynamic"
+        "type": "static"
       },
       {
         "source": "admin",
@@ -13755,6 +13755,11 @@
       },
       {
         "source": "auth",
+        "target": "npm:jest-preset-angular",
+        "type": "static"
+      },
+      {
+        "source": "auth",
         "target": "npm:i18n-iso-countries",
         "type": "static"
       },
@@ -13762,11 +13767,6 @@
         "source": "auth",
         "target": "npm:i18n-iso-countries",
         "type": "dynamic"
-      },
-      {
-        "source": "auth",
-        "target": "npm:jest-preset-angular",
-        "type": "static"
       }
     ],
     "ui": [

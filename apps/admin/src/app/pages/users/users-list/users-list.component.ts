@@ -48,8 +48,11 @@ export class UsersListComponent implements OnInit {
       header: 'Delete User',
       icon: 'pi pi-exclamation-triangle',
       accept: () => {
+        console.log(userId);
+       
         this.usersService.deleteUser(userId).subscribe(
           () => {
+             console.log("DELETE________");
             this._getUsers();
             this.messageService.add({
               severity: 'success',
@@ -58,6 +61,7 @@ export class UsersListComponent implements OnInit {
             });
           },
           () => {
+            console.log("ERROR________",userId );
             this.messageService.add({
               severity: 'error',
               summary: 'Error',

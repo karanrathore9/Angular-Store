@@ -9,11 +9,13 @@ import { UsersListComponent } from './pages/users/users-list/users-list.componen
 import { UsersFormComponent } from './pages/users/users-form/users-form.component';
 import { OrdersListComponent } from './pages/orders/orders-list/orders-list.component';
 import { OrdersDetailComponent } from './pages/orders/orders-detail/orders-detail.component';
+import { AuthComponent, AuthGuard } from '@angular-monorepo/auth';
 
 export const appRoutes: Route[] = [
   {
     path: '',
     component: ShellComponent,
+    // canActivate:[AuthGuard],
     children: [
       {
         path: 'dashboard',
@@ -67,7 +69,8 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'loginUser',
-    loadComponent: () =>
-      import('@angular-monorepo/auth').then((m) => m.AuthComponent),
+    component:AuthComponent
+    // loadComponent: () =>
+    //   import('@angular-monorepo/auth').then((m) => m.AuthComponent),
   },
 ];

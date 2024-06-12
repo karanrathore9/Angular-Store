@@ -7,7 +7,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CategoriesListComponent } from './pages/categories/categories-list/categories-list.component';
 import { CardModule } from 'primeng/card';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import {
   CategoriesService,
   OrdersService,
@@ -18,6 +18,8 @@ import { CategoriesFormComponent } from './pages/categories/categories-form/cate
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { CommonModule } from '@angular/common';
 import { ToastModule } from 'primeng/toast';
+// eslint-disable-next-line @nx/enforce-module-boundaries
+import { AuthComponent, AuthGuard, AuthService, JwtInterceptor, LocalstorageService } from '@angular-monorepo/auth';
 @Component({
   standalone: true,
   imports: [
@@ -32,6 +34,9 @@ import { ToastModule } from 'primeng/toast';
     CategoriesFormComponent,
     HttpClientModule,
     ToastModule,
+    AuthComponent,
+
+    
   ],
   // animations: [BrowserAnimationsModule, NoopAnimationsModule],
 
@@ -42,6 +47,11 @@ import { ToastModule } from 'primeng/toast';
     ConfirmationService,
     UsersService,
     OrdersService,
+    AuthGuard,
+    AuthService,
+    LocalstorageService,
+    
+    {provide:HTTP_INTERCEPTORS, useClass:JwtInterceptor, multi:true}
   ],
   selector: 'admin-root',
   templateUrl: './app.component.html',

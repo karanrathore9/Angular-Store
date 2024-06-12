@@ -21,11 +21,14 @@ export class JwtInterceptor implements HttpInterceptor {
     const isAPIUrl = request.url.startsWith(environment.apiUrl);
 
     if (token && isAPIUrl) {
+      console.log('Token found, setting headers'); // Debug statement
       request = request.clone({
         setHeaders: {
           Authorization: `Bearer ${token}`,
         },
       });
+    } else {
+      console.log('No token found or not an API URL'); // Debug statement
     }
 
     return next.handle(request);
